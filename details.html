@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mn"><h1>welcome for more information</h1></div>
+    <div class="content">
+        {% for item in works %}
+            <div class="card border-info mb-3" style="max-width: 30rem;">
+               <h2>{{ item.title}}</h2>
+               <p>{{ item.description }}</p>
+              <h6 > {{ item.technology}}</h6>
+              <h6 >{{item.pub_date}}</h6>
+            </div>
+        {% endfor%}
+    </div> 
+</body>
+</html>
